@@ -78,3 +78,6 @@ ds目录里面的gitignore内容
 index
 ```
 以上的结果是git会忽略ds/index.js, 并且也会忽略ds/node_modules
+
+# git submodule add
+添加子模块（这个有空看一下，应该有用）

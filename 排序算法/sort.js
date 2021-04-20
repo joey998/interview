@@ -47,7 +47,7 @@ function sortInfo( name = 'sort', fn, length){
   let sortedArr = fn(arr)
   let timeEnd = new Date();
   console.log(`---------------${name + ' start'}-------------------------`,
-    '\ntimeUse(ms):', timeEnd - timeStart, '\nresult:\n前20位', sortedArr.slice(0, 20).toString(), "\n后20位", sortedArr.slice(length-20).toString(),
+    `\nlength: ${length}, timeUse(ms):`, timeEnd - timeStart, '\nresult:\n前20位', sortedArr.slice(0, 20).toString(), "\n后20位", sortedArr.slice(length-20).toString(),
     `\n---------------------${name + ' end'}-------------------------`
     );
 }
@@ -179,6 +179,6 @@ function partition(arr, left, right, compareFn){
 
 // sortInfo('bubbleSort', bubbleSort, 100000) //24824(4800u)  
 // sortInfo('selectionSort', selectionSort, 100000) //6337(4800u)  7816(i5-8500)
-sortInfo('insertionSort', insertionSort, 100000) //30948(4800u)  31605(i5-8500)
+// sortInfo('insertionSort', insertionSort, 100000) //30948(4800u)  31605(i5-8500)
 // sortInfo('mergeSort', mergeSort, 100000) //  54(i5-8500)  
-// sortInfo('quickSort', quickSort, 100000) //  31(i5-8500)  
+sortInfo('quickSort', quickSort, 100000) //  31(i5-8500)  

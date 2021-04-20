@@ -14,6 +14,8 @@
     4. git add .
     5. git commit -m 'commit all'
 
+5. 非常意外，好像父级仓库不能够管理子级仓库，只会把子仓库的commitid管理起来，意思是如果提交到github或者gitee之后，从一个新的地方clone的话，子仓库只有一个名字，里面没有任何内容。。。。
+
 例如文件结构如下
 ```
 |-- .git
